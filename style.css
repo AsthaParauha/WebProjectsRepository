@@ -1,0 +1,232 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation bara design */
+nav {
+
+    display: block;
+    position: sticky;
+    /* position: fixed; */
+    margin: 0px;
+
+}
+
+ul {
+    /* margin: 0px; */
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    padding-left: 0px;
+}
+
+li {
+    border: none;
+    color: white;
+
+    list-style-type: none;
+}
+
+
+a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5em;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+}
+
+/* introduction design */
+
+.contanior {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    display: block;
+    text-align: left;
+    /* justify-content: center; */
+    width: 100%;
+    height:auto;
+    
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding-left: 3rem;
+    
+}
+
+.divclass {
+    display: block;
+    margin: 0.5rem;
+}
+
+#div1 {
+    font-size: 2rem;
+    
+}
+
+#div2 {
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+#div3 {
+    /* border: 2px solid beige; */
+    display: inline-block;
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing: 0.2em;
+    text-align-last: center;
+    font-size: 0.8rem;
+    height: auto;
+    width: 25rem;
+
+}
+
+
+img{
+    height: 50%;
+    width: 60%;
+    margin: 2em;
+    margin-top: 0px;
+    /* margin-left: 0px; */
+    padding: 2em;
+    box-sizing: border-box;
+    display: inline;
+    border-radius: 6em;
+    
+}
+/* background image of page */
+/* body#workbody{
+    background-image: url("images.jpj");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+} */
+
+body {
+    background-image: url(portfolio_background_image.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+/* contact us */
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-size: 0.5rem;
+}
+
+.formElement {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 2px;
+
+}
+
+input {
+    /* background-color: black; */
+    border: none;
+
+}
+label{
+    font-size: small;
+}
+#btn{
+    font-size: medium;
+    color: black;
+    height: 1.5rem;
+    width: 4rem;
+}
+
+@media only screen and (max-width:480px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contanior{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:1em ;
+        margin-bottom: 1em;
+
+    }
+
+
+h1{
+    text-align: left;
+}
+
+label{
+    text-align: left;
+}
+a{
+    font-size: 0.8em;
+}
+
+}
+@media only screen and (min-width:1024px){
+    a{
+        font-size: medium;
+    }
+    .contanior{
+        padding-left: 5em;
+    }
+    #div1{
+        font-size: 3.5rem;
+    }
+    #div2{
+        font-size: 4em;
+    }
+    #div3{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+
+    
+}
+@media only screen and (min-width:480px){
+    .about{
+        width: 50%;
+        height: auto;
+    }
+    #imgdiv{
+        width: 50%;
+        height: auto;
+        float: right;
+    }
+
+}

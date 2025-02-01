@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #333;
+            padding: 10px 0;
+            scrollbar-width: none;
+        }
+        .navbar-container::-webkit-scrollbar {
+            display: none;
+        }
+        .navbar {
+            display: flex;
+            gap: 20px;
+            padding-left: 10px;
+        }
+        .nav-item {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #444;
+            border-radius: 5px;
+            text-decoration: none;
+            /* transition: background 0.3s; */
+        }
+        .nav-item:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <li id="topic1" class="nav-item">Web Devlopment</li>
+            <li id="topic2" class="nav-item">HTML</li>
+            <li id="topic3" class="nav-item">CSS</li>
+            <li id="topic4" class="nav-item">JavaScript</li>
+            <li id="topic5" class="nav-item">mySQL</li>
+            <li id="topic6" class="nav-item">php</li>
+            <li id="topic7" class="nav-item">Github & git</li>
+            <li id="topic8" class="nav-item">Python</li>
+        </nav>
+    </div>
+    <div class="blog-container">
+        <h2 class="blog-title">Blog Title</h2>
+        <p class="blog-content">We are working on this.</p>
+    </div>
+    <footer class="footer">
+        &copy; 2024 My Blog. All rights reserved.
+    </footer>
+</body>
+</html>
